@@ -10,13 +10,27 @@ public class Main {
         return value >= 100;
     }
 
-    public static int faculty(int number) {
+/*    public static int faculty(int number) {
         int result = 1;
-        for(int i = 1; i<=number; ++i){
-           result*= i;
+        int i = 1;
+        while(i <= number){
+            result *= i;
+            i++;
+        }*/
 
+
+       // for(int i = 1; i<=number; ++i){
+        //   result*= i;
+       // }
+      //  return result;
+   // }
+
+    public static int faculty(int number){
+        if (number<=1){
+            return 1;
+        } else {
+            return faculty(number-1) *number;
         }
-        return result;
     }
 
 
