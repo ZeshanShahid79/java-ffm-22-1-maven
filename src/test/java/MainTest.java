@@ -40,6 +40,6 @@ public class MainTest {
         boolean actual = Main.biggerAs(inputValue);
 
         //THEN
-        assertFalse(Main.biggerAs(inputValue));
+        assertFalse(actual);
     }
 }
